@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <title>W3.CSS Template</title>
+</head>
+  <body>
+    <header>
+        <div class="navbar" id="navbar">
+          <div class="header-nav active">
+              <nav>
+                <ul>
+                 <li class="home"><a href="home.html">HOME</a></li>
+                 <li><a href="#band">BAND</a></li>
+                 <li><a href="#tour">TOUR</a></li>
+                 <li><a href="#contact">CONTACT</a></li>
+                <li class="dropdown">
+                  <button class="more-btn" title="More">MORE <i class="fa fa-caret-down"></i></button>
+                  <div class="dropdown-content">
+                    <a href="#">Merchandise</a>
+                    <a href="#">Extras</a>
+                    <a href="#">Media</a>
+                  </div>
+                </li>
+                </ul>
+              </nav>
+            </div>
+          <div class="header-search"> 
+            <i class='fa fa-search'></i>
+          </div>
+        </div>
+      <div class="navbar-demo">
+        <div class="nav-title">HOME</div>
+        <div class="menu-icon" onclick="toggleMenu()"><i class='fa fa-bars'></i></div>
+      </div>
+  <div id="dropdownMenu" class="dropdown">
+    <a href="#band">BAND</a>
+    <a href="#tour">TOUR</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#">MERCH</a>
+  </div>
+  <script>
+  function toggleMenu() {
+    const dropdown = document.getElementById("dropdownMenu");
+    dropdown.classList.toggle("show");
+  }
+
+  function toggleMoreDropdown(event) {
+    event.stopPropagation();
+    const dropdown = document.getElementById("moreDropdown");
+    dropdown.classList.toggle("show");
+  }
+
+  window.addEventListener('click', function(e) {
+    const moreDropdown = document.getElementById("moreDropdown");
+    const menuDropdown = document.getElementById("dropdownMenu");
+
+    // Nếu click bên ngoài cả more-btn và moreDropdown thì ẩn nó
+    if (!e.target.closest('.more-btn') && !e.target.closest('#moreDropdown')) {
+      moreDropdown.classList.remove('show');
+    }
+
+    // Nếu click bên ngoài menu icon và dropdownMenu, ẩn dropdownMenu
+    if (!e.target.closest('.menu-icon') && !e.target.closest('#dropdownMenu')) {
+      menuDropdown.classList.remove('show');
+    }
+  });
+</script>
+
+
+    </header>
+  <!-- Slideshow Container -->
+  <div class="slideshow-container">
+  <div class="slide fade">
+    <img src="/image/la.jpg" alt="Slide 1">
+    <div class="caption">
+      <h3>Los Angeles</h3>
+    <p>
+      <b>We had the best time playing at Venice Beach!</b>
+    </p>
+    </div>
+  </div>
+  <div class="slide fade">
+    <img src="/image/newyork.jpg" alt="Slide 2">
+    <div class="caption">
+      <h3>New York</h3>
+    <p>
+      <b>The atmosphere in New York is lorem ipsum.</b>
+    </p>
+    </div>
+  </div>
+  <div class="slide fade">
+    <img src="/image/chicago.jpg" alt="Slide 3">
+    <div class="caption">
+      <h3>Chicago</h3>
+    <p>
+      <b>Thank you, Chicago - A night we won't forget.</b>
+    </p>
+    </div>
+  </div>
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }
+
+  slides[slideIndex - 1].style.display = "block";
+
+  setTimeout(showSlides, 3000); // đổi ảnh sau 3 giây
+}
+</script>
+<!-- Band -->
+ <div class="band" id="band">
+  <h2>THE BAND</h2>
+  <p class="name" id="name"><i> We love music</i></p> 
+  <div class="explain" id="explain"> We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+  <div class="bandmember" id="bandmember">
+    <div>
+      <p>Name</p>
+      <img src="image/bandmember.jpg" alt="">
+    </div>
+    <div>
+      <p>Name</p>
+      <img src="image/bandmember.jpg" alt="">
+    </div>
+    <div>
+      <p>Name</p>
+      <img src="image/bandmember.jpg" alt="">
+    </div>
+  </div>
+ </div>
+<!--------------------Tour-->
+ <div class="tour" id="tour">
+    <div class="tour-1">
+      <h2>TOUR DATES</h2>
+      <p class="subtitle">Remember to book your tickets!</p>
+      <div class="tour-dates">
+        <div>September <span class="sold-out">Sold out</span></div>
+        <div>October <span class="sold-out">Sold out</span></div>
+        <div>November <span class="badge">3</span></div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <img src="image/newyork.jpg" alt="New York">
+          <div class="card-content">
+            <h3>New York</h3>
+            <p class="datetime">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button >Buy Tickets</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/paris.jpg" alt="Paris">
+          <div class="card-content">
+            <h3>Paris</h3>
+            <p class="datetime">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button>Buy Tickets</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image/sanfran.jpg" alt="San Francisco">
+          <div class="card-content">
+            <h3>San Francisco</h3>
+            <p class="datetime">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button>Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--------------------Contact-->
+  <div class="contact" id="contact">
+    <h2>CONTACT</h2>
+    <p><i>Fan? Drop a note!</i></p>
+    <div class="contact-infor">
+      <div class="contact-1" >
+        <i class="fa fa-map-marker"></i> Chicago, US<br>
+        <i class="fa fa-phone"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope"></i> Email: mail@mail.com<br>
+      </div>
+      <div class="form-page">
+        <form action="/action_page.php" target="_blank">
+          <div class="form1">
+            <div class="">
+              <input class="inputform" type="text" placeholder="Name" required="" name="Name">
+            </div>
+            <div class="">
+              <input class="inputform" type="text" placeholder="Email" required="" name="Email">
+            </div>
+          </div>
+          <div class="form2">
+          <input class="form-input" type="text" placeholder="Message" required="" name="Message">
+          </div>
+          <div class="btnsend">
+            <button class="send-btn" type="submit">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <img src="image/map.jpg" alt="map">
+  </div>
+  <!--------------------Ticket Model-->
+  <div class="ticketModel">
+
+  </div>
+<!--------------------FOOTER-->
+<footer class="footer-icon">
+  <div class="icon-footer">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-instagram" ></a>
+    <a href="#" class="fa fa-pinterest" ></a>
+    <a href="#" class="fa fa-twitter" ></a>
+    <a href="#" class="fa fa-snapchat-ghost" ></a>
+    <a href="#" class="fa fa-linkedin" ></a>
+  </div>
+  <p class="w3-medium" id="w3">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+</body>
+</html>
+
