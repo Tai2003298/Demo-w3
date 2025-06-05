@@ -407,8 +407,13 @@ a:-webkit-any-link {
   font-size: 20px;
   padding: 12px 24px;
   cursor: pointer;
+  font: normal normal normal 14px / 1 FontAwesome;
 }
-
+}
+.menu-icon:hover{
+  color: #000 !important;
+  background-color: #ccc !important;
+}
 #dropdownMenu {
   position: fixed;
   display: none;
