@@ -582,7 +582,7 @@ a:-webkit-any-link {
   .work-img-1,
   .work-img-2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding: 0;
   }
 
@@ -630,4 +630,21 @@ a:-webkit-any-link {
     height: auto;
     padding: 32px 16px;
   }
+}
+@media (max-width: 1366px) {
+.content-about,.content-about2,.content-about3{
+    padding: 64px 16px;
+    margin: 0px 80px;
+}
+}
+@media (max-width: 982px) {
+.content-about,.content-about2,.content-about3{
+    padding: 64px 16px;
+}
+}
+@media (max-width: 1020px) {
+.content-about,.content-about2,.content-about3{
+    padding: 64px 16px;
+    margin: 0px 20px;
+}
 }
