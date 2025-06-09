@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>W3.CSS.Template</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+          <div class="header-nav active">
+              <nav>
+                <ul>
+                 <li class="#"><a href="home.html">HOME</a></li>
+                 <li><a href="#about" class="about">
+                    <div class="fa fa-user"></div>
+                    ABOUT</a></li>
+                 <li><a href="#portfolio">
+                    <div class="fa fa-th"></div>
+                    PORTFOLIO</a></li>
+                 <li><a href="#contact">
+                    <div class="fa fa-envelope"></div>
+                    CONTACT</a></li>
+                </ul>
+              </nav>
+            </div>
+          <div class="header-search"> 
+            <i class='fa fa-search'></i>
+          </div>
+        </div>
+        <div class="navbar-demo">
+            <div class="nav-title">HOME</div>
+            <div class="menu-icon" onclick="toggleMenu()"><i class='fa fa-bars'></i></div>
+        </div>
+        <div id="dropdownMenu" class="dropdown">
+            <a href="#about">ABOUT</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#">SEARCH</a>
+        </div>
+            <script>
+                function toggleMenu() {
+                    const dropdown = document.getElementById("dropdownMenu");
+                    dropdown.classList.toggle("show");
+                }
+
+                function toggleMoreDropdown(event) {
+                    event.stopPropagation();
+                    const dropdown = document.getElementById("moreDropdown");
+                    dropdown.classList.toggle("show");
+                }
+
+                window.addEventListener('click', function(e) {
+                    const moreDropdown = document.getElementById("moreDropdown");
+                    const menuDropdown = document.getElementById("dropdownMenu");
+
+                    // Nếu click bên ngoài cả more-btn và moreDropdown thì ẩn nó
+                    if (!e.target.closest('.more-btn') && !e.target.closest('#moreDropdown')) {
+                    moreDropdown.classList.remove('show');
+                    }
+
+                    // Nếu click bên ngoài menu icon và dropdownMenu, ẩn dropdownMenu
+                    if (!e.target.closest('.menu-icon') && !e.target.closest('#dropdownMenu')) {
+                    menuDropdown.classList.remove('show');
+                    }}
+                );
+            </script>
+    </header>
+<!-- Slideshow Container -->
+    <div class="slide-container">
+        <div class="slide-fade">
+            <img src="/w3-photo/image/parallax1.jpg" alt="Slide-1">
+            <div class="caption">
+            <span class="caption-logo">MY WEBSITE LOGO</span>
+            </div>
+        </div>
+    </div>
+<div class="content-about"> 
+    <div class="about" id="about">
+        <div class="about-text">
+            <h3>ABOUT ME</h3>
+        <p class="about-1">I love photography</p>
+        <p class="text-1">
+            We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="text-img">
+            <div class="about-2">
+                <div class="about-img">
+                    <p>
+                        <b><i class="fa fa-user"></i>My Name</b>
+                    </p>
+                    <br>
+                    <img src="image/avatar_hat.jpg" alt="Img-1">
+                </div>
+            </div>
+            <div class="about-pharase">
+                <p>
+                    Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+        </div>
+        <p class="about-2">Im really good at:</p>
+        <div class="about-gt">
+        <p class="about-photo">
+            <i class="fa fa-camera">Photography</i>
+        </p>
+        <div class="text-photo">
+            <div class="photo">
+                90%
+            </div>
+        </div>
+        <p class="about-webds">
+            <i class="fa fa-laptop">Web Design</i>
+        </p>
+        <div class="text-photo">
+            <div class="webds">
+                85%
+            </div>
+        </div>
+        <p class="about-pts">
+            <i class="fa fa-photo">Photoshop</i>
+        </p>
+        <div class="text-pts">
+            <div class="pts">
+                75%
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="information">
+    <div class="partner">
+        <span> 14+</span>
+        "Partners"
+    </div>
+    <div class="project">
+        <span> 55+</span>
+        "Projects Done"
+    </div>
+    <div class="client">
+        <span> 89+</span>
+        "Happy Clients"
+    </div>
+    <div class="meeting">
+        <span> 150+</span>
+        "Meetings"
+    </div>
+</div>
+<div class="slide-container2">
+    <div class="slide-fade2">
+        <img src="image/parallax2.jpg" alt="Slide-2">
+        <div class="caption-2">
+        <span class="caption-logo-2">PORTFOLIO</span>
+        </div>
+    </div>
+</div>
+<div class="content-about2" id="portfolio">
+    <h3>MY WORK</h3>
+    <div class="content-about2-img">
+        <p>Here are some of my latest lorem work ipsum tipsum.</p>
+        <p>Click on the images to make them bigger</p>
+    </div>
+    <br>
+    <div class="work-img">
+        <div class="work-img-1">
+        <div class="img-work1">
+            <img src="image/p1.jpg" alt="The mist over the mountains" onclick="onClick(this)">
+        </div>
+        <div class="img-2">
+            <img src="image/p2.jpg" alt="Coffee beans" onclick="onClick(this)">
+        </div>
+        <div class="img-3">
+            <img src="image/p3.jpg" alt="Bear closeup" onclick="onClick(this)">
+        </div>
+        <div class="img-4">
+            <img src="image/p4.jpg" alt="Quiet ocean" onclick="onClick(this)">
+        </div>
+    </div>
+    <div class="work-btn">
+        <div class="work-img-2">
+            <div class="img-5">
+                <img src="image/p5.jpg" alt="The mist" onclick="onClick(this)">
+            </div>
+            <div class="img-6">
+                <img src="image/p6.jpg" alt="My beloved typewriter" onclick="onClick(this)">
+            </div>
+            <div class="img-7">
+                <img src="image/p7.jpg" alt="Empty ghost train" onclick="onClick(this)">
+            </div>
+            <div class="img-8">
+                <img src="image/p8.jpg" alt="Sailing" onclick="onClick(this)">
+            </div>
+        </div>
+        <button class="btn-load">LOAD MORE</button>
+    </div>
+</div>
+</div>
+<div class="slide-container3" id="contact">
+    <div class="slide-fade3">
+        <img src="image/parallax3.jpg" alt="Slide-3">
+        <div class="caption-3">
+        <span class="caption-logo-3">CONTACT</span>
+        </div>
+    </div>
+</div>
+<div class="content-about3">
+    <h3>WHERE I WORK</h3>
+    <div class="content-about3-img">
+        <p>I'd love your feedback!</p>
+    </div>
+    <div class="address">
+        <div class="map">
+            <img src="image/map.jpg" alt="map">
+        </div>
+        <div class="contact-address">
+            <div class="address-1">
+                <div>
+                    <i class="fa fa-map-marker" ></i>Chicago, US
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>Phone: +00 151515
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>Email:mail@mail.com
+                </div>
+            </div>
+            <p>
+            Swing by for a cup of <i class="fa fa-coffee"></i>
+            , or leave me a note:
+        </p>
+        <div class="form-page">
+        <form action="/action_page.php" target="_blank">
+            <div class="form1">
+                <div class="">
+                <input class="inputform" type="text" placeholder="Name" required="" name="Name">
+                </div>
+                <div class="">
+                <input class="inputform" type="text" placeholder="Email" required="" name="Email">
+                </div>
+            </div>
+            <div class="form2">
+            <input class="form-input" type="text" placeholder="Message" required="" name="Message">
+            <div class="btnsend">
+                <button class="send-btn" type="submit">
+                   <i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+            </div>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<footer class="footer-icon">
+  <a href="#" class="btn-footer"><i class="fa fa-arrow-up"></i>To the top</a>
+  <div class="icon-footer">
+    <a href="#" class="fa fa-facebook-official"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-snapchat"></a>
+    <a href="#" class="fa fa-pinterest-p"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+  </div>
+  <p class="w3-medium" id="w3">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover">w3.css</a></p>
+</footer>
+<div class="modal">
+  <div id="modal01" class="modal1" >
+    <span onclick="document.getElementById('modal01').style.display='none'">&times;</span>
+    <span class="close-modal" onclick="document.getElementById('modal01').style.display='none'"> 
+      <i class="fa fa-remove"></i>
+    </span>
+    <div class="img-caption-modal">
+      <img id="img" src="" alt="">
+      <div class="caption-modal-1">
+        <div id="caption-modal"></div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function onClick(element) {
+  document.getElementById("img").src = element.src;
+  document.getElementById("img").alt = element.alt;
+  document.getElementById("caption-modal").innerHTML = element.alt;
+  document.getElementById("modal01").style.display = "flex";
+}
+function closeModal() {
+  document.getElementById('modal01').style.display = 'none';
+}
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+});
+</script>
+</body>
+</html>
