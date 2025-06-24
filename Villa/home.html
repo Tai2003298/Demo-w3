@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>W3.CSS.Template</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!---Looding page ----->  
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <span class="dot"></span>
+    <div class="dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<!---Sub header ----->
+<div class="sub-header">
+    <div class="container">
+      <div class="row-1">
+        <div class="row-info">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i> info@company.com</li>
+            <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li>
+          </ul>
+        </div>
+        <div class="row-social">
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+<!--- Header ----->
+<header class="header-area">
+  <div class="container">
+    <div class="row">
+      <div class="row-main">
+        <nav class="main-nav">
+          <a href="home.html" class="logo">
+            <h1>Villa</h1>
+          </a>
+          <ul class="nav">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="details.html">Property Details</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+          </ul>   
+          <a class="menu-trigger">
+            <span>Menu</span>
+          </a>
+        </nav>
+      </div>
+      <div class="navbar-demo">
+        <div class="nav-title">Villa</div>
+        <div class="menu-icon" onclick="toggleMenu()"><i class='fa fa-bars'></i></div>
+        <div id="dropdownMenu" class="dropdown">
+        <a href="home.html" class="active">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="details.html">Property Details</a>  
+        <a href="contact.html">Contact Us</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Slideshow Container -->
+<div class="slider">
+  <div class="slides" id="slides">
+    <div class="slide">
+      <img src="image/banner-01.jpg" alt="Slide 1">
+      <div class="caption">
+        <span class="category">Toronto, <em>Canada</em></span>
+        <h2>Hurry!<br>Get the Best Villa for you</h2>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="image/banner-02.jpg" alt="Slide 2">
+      <div class="caption">
+        <span class="category">Melbourne, <em>Australia</em></span>
+        <h2>Be Quick!<br>Get the best villa in town</h2>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="image/banner-03.jpg" alt="Slide 3">
+      <div class="caption">
+        <span class="category">Miami, <em>South Florida</em></span>
+        <h2>Act Now!<br>Get the highest level penthouse</h2>
+      </div>
+    </div>
+  </div>
+  <button class="prev" onclick="prevSlide()">&#10094;</button>
+  <button class="next" onclick="nextSlide()">&#10095;</button>
+</div>
+<div class="featured-section">
+  <div class="container-featured">
+    <div class="row-featured">
+      <!-- Cột trái -->
+      <div class="left">
+        <div class="left-image">
+          <img src="image/featured.jpg" alt="Featured">
+          <a href="details.html">
+            <img src="image/featured-icon.png" alt="Icon">
+          </a>
+        </div>
+      </div>
+      <!-- Cột giữa -->
+      <div class="center">
+        <div class="section-heading">
+          <h6>| Featured</h6>
+          <h2>Best Appartment &amp; Sea View</h2>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-button">Best useful links ?</button>
+            <div class="accordion-content">
+              Get <strong>the best villa</strong> website template in HTML CSS and Bootstrap for your business. TemplateMo provides you the <a href="#">best free CSS templates</a> in the world. Please tell your friends about it.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button">How does this work ?</button>
+            <div class="accordion-content">
+              Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-button">Why is Villa Agency the best ?</button>
+            <div class="accordion-content">
+              Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code>  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cột phải -->
+      <div class="right">
+        <div class="info-table">
+          <ul>
+            <li>
+              <img src="image/info-icon-01.png" alt="">
+              <h4>250 m²<br><span>Total Flat Space</span></h4>
+            </li>
+            <li>
+              <img src="image/info-icon-02.png" alt="">
+              <h4>Contract<br><span>Contract Ready</span></h4>
+            </li>
+            <li>
+              <img src="image/info-icon-03.png" alt="">
+              <h4>Payment<br><span>Payment Process</span></h4>
+            </li>
+            <li>
+              <img src="image/info-icon-04.png" alt="">
+              <h4>Safety<br><span>24/7 Under Control</span></h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="video-section">
+  <img class="video-section-bg" src="image/video-bg.jpg" alt="Video Background">
+  <div class="video-overlay"></div>
+  <div class="video-content">
+    <div class="section-heading-text-center">
+      <h6>| Video View</h6>
+      <h2>Get Closer View &amp; <br> Different Feeling</h2>
+    </div>
+  </div>
+</div>
+<div class="video-preview">
+  <img src="image/video-frame.jpg" alt="Video Preview">
+  <a href="https://www.youtube.com/" class="play-button" title="Play Video">
+    <i class="fa fa-play"></i>
+  </a>
+</div>
+<div class="fun-facts">
+  <div class="container">
+    <div class="container-facts">
+      <div class="fact-box">
+        <div class="circle-dot"></div>
+        <h2 class="count-number">34</h2>
+        <p class="count-text">Buildings<br><span>Finished Now</span></p>
+      </div>
+      <div class="fact-box">
+        <div class="circle-dot"></div>
+        <h2 class="count-number">12</h2>
+        <p class="count-text">Years<br><span>Experience</span></p>
+      </div>
+      <div class="fact-box">
+        <div class="circle-dot"></div>
+        <h2 class="count-number">24</h2>
+        <p class="count-text">Awwards<br><span>Won 2023</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="section-best-deal">
+<div class="container">
+  <div class="heading-row">
+    <div class="section-heading">
+      <h6>| Best Deal</h6>
+      <h2>Find Your Best Deal<br>Right Now!</h2>
+    </div>
+    <div class="tab-buttons">
+      <button class="tab-btn active" onclick="openTab('apartment')">Apartment</button>
+      <button class="tab-btn" onclick="openTab('villa')">Villa House</button>
+      <button class="tab-btn" onclick="openTab('penthouse')">Penthouse</button>
+    </div>
+  </div>
+    <!-- Tabs Content -->
+  <div id="apartment" class="tab-content active">
+    <div class="tab-row">
+      <!-- Left Info -->
+      <div class="tab-col">
+        <ul>
+          <li>Total Flat Space <span>185 m2</span></li>
+          <li>Floor number <span>26th</span></li>
+          <li>Number of rooms <span>4</span></li>
+          <li>Parking Available <span>Yes</span></li>
+          <li>Payment Process <span>Bank</span></li>
+        </ul>
+      </div>
+      <div class="tab-col">
+        <img src="image/deal-01.jpg" alt="Apartment">
+      </div>
+      <div class="tab-col">
+        <h4>Extra Info About Property</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.</p>
+        <p>When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</p>
+        <div class="icon-tab-col"> 
+          <a href="details.html"><i class="fa fa-calendar"></i> Schedule a visit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Villa tab -->
+    <div id="villa" class="tab-content">
+      <div class="tab-row">
+        <div class="tab-col">
+          <ul>
+            <li>Total Flat Space <span>250 m2</span></li>
+            <li>Floor number <span>18th</span></li>
+            <li>Number of rooms <span>5</span></li>
+            <li>Parking Available <span>Yes</span></li>
+            <li>Payment Process <span>Bank</span></li>
+          </ul>
+        </div>
+        <div class="tab-col">
+          <img src="image/deal-02.jpg" alt="Villa">
+        </div>
+        <div class="tab-col">
+          <h4>Detail Info About Villa</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est lorem sit amet elit suscipit consectetur. Vivamus feugiat leo vel sem tempus.</p>
+          <p>Swag fanny pack lyft blog twee. DIY kitsch twee taiyaki fixie hella venmo.</p>
+          <div class="icon-tab-col"> 
+            <a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Penthouse tab -->
+    <div id="penthouse" class="tab-content">
+      <div class="tab-row">
+        <div class="tab-col">
+          <ul>
+            <li>Total Flat Space <span>320 m2</span></li>
+            <li>Floor number <span>34th</span></li>
+            <li>Number of rooms <span>6</span></li>
+            <li>Parking Available <span>Yes</span></li>
+            <li>Payment Process <span>Bank</span></li>
+          </ul>
+        </div>
+        <div class="tab-col">
+          <img src="image/deal-03.jpg" alt="Penthouse">
+        </div>
+        <div class="tab-col">
+          <h4>Extra Info About Penthouse</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est lorem sit amet elit suscipit consectetur. Vivamus feugiat leo vel sem tempus.</p>
+          <p>Venmo after messenger poutine next level humblebrag swag franzen.</p>
+          <div class="icon-tab-col"> 
+            <a href="details.html"><i class="fa fa-calendar"></i> Schedule a visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="properties-section">
+  <div class="section-heading">
+    <h6>| Properties</h6>
+    <h2>We Provide The Best <br>Property You Like</h2>
+  </div>
+  <div class="properties-grid">
+    <!-- Property Card 1 -->
+    <div class="property-card">
+      <img src="image/property-01.jpg" alt="Property 1">
+      <div class="property-info">
+        <div class="top-row">
+          <span class="category">Luxury Villa</span>
+          <span class="price">$2.264.000</span>
+        </div>
+        <h4>18 New Street Miami, OR 97219</h4>
+        <ul>
+          <li>Bedrooms: <span>8</span></li>
+          <li>Bathrooms: <span>8</span></li>
+          <li>Area: <span>545m2</span></li>
+          <li>Floor: <span>3</span></li>
+          <li>Parking: <span>6 spots</span></li>
+        </ul>
+        <div class="visit-row">
+          <a href="details.html" class="visit-btn">Schedule a visit</a>
+        </div>
+      </div>
+    </div>
+    <!-- Property Card 2 -->
+    <div class="property-card">
+      <img src="image/property-02.jpg" alt="Property 2">
+      <div class="property-info">
+        <div class="top-row">
+          <span class="category">Luxury Villa</span>
+          <span class="price">$1.180.000</span>
+        </div>
+        <h4>54 Mid Street Florida, OR 27001</h4>
+        <ul>
+          <li>Bedrooms: <span>6</span></li>
+          <li>Bathrooms: <span>5</span></li>
+          <li>Area: <span>450m2</span></li>
+          <li>Floor: <span>3</span></li>
+          <li>Parking: <span>8 spots</span></li>
+        </ul>
+        <div class="visit-row">
+          <a href="details.html" class="visit-btn">Schedule a visit</a>
+        </div>
+      </div>
+    </div>
+    <!-- Property Card 3 -->
+    <div class="property-card">
+      <img src="image/property-03.jpg" alt="Property 3">
+      <div class="property-info">
+        <div class="top-row">
+          <span class="category">Luxury Villa</span>
+          <span class="price">$1.460.000</span>
+        </div>
+        <h4>26 Old Street Miami, OR 38540</h4>
+        <ul>
+          <li>Bedrooms: <span>5</span></li>
+          <li>Bathrooms: <span>4</span></li>
+          <li>Area: <span>225m2</span></li>
+          <li>Floor: <span>3</span></li>
+          <li>Parking: <span>10 spots</span></li>
+        </ul>
+        <div class="visit-row">
+          <a href="details.html" class="visit-btn">Schedule a visit</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="property-card">
+      <img src="image/property-04.jpg" alt="Property 4">
+      <div class="property-info">
+        <div class="top-row">
+          <span class="category">Apartment</span>
+          <span class="price">$584.500</span>
+        </div>
+        <h4>12 New Street Miami, OR 12650</h4>
+        <ul>
+          <li>Bedrooms: <span>4</span></li>
+          <li>Bathrooms: <span>3</span></li>
+          <li>Area: <span>125m2</span></li>
+          <li>Floor: <span>25th</span></li>
+          <li>Parking: <span>2 cars</span></li>
+        </ul>
+        <div class="visit-row">
+          <a href="details.html" class="visit-btn">Schedule a visit</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="property-card">
+      <img src="image/property-05.jpg" alt="Property 5">
+      <div class="property-info">
+        <div class="top-row">
+          <span class="category">Penthouse</span>
+          <span class="price">$925.600</span>
+        </div>
+        <h4>34 Beach Street Miami, OR 42680</h4>
+        <ul>
+          <li>Bedrooms: <span>4</span></li>
+          <li>Bathrooms: <span>4</span></li>
+          <li>Area: <span>180m2</span></li>
+          <li>Floor: <span>38th</span></li>
+          <li>Parking: <span>2 cars</span></li>
+        </ul>
+        <div class="visit-row">
+          <a href="details.html" class="visit-btn">Schedule a visit</a>
+        </div>
+      </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="property-card">
+      <img src="image/property-06.jpg" alt="Property 6">
+      <div class="property-info">
+        <div class="top-row">
+          <span class="category">Modern Condo</span>
+          <span class="price">$450.000</span>
+        </div>
+        <h4>22 New Street Portland, OR 16540</h4>
+        <ul>
+          <li>Bedrooms: <span>3</span></li>
+          <li>Bathrooms: <span>2</span></li>
+          <li>Area: <span>165m2</span></li>
+          <li>Floor: <span>26th</span></li>
+          <li>Parking: <span>3 cars</span></li>
+        </ul>
+        <div class="visit-row">
+          <a href="details.html" class="visit-btn">Schedule a visit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contact-section">
+  <img class="contact-section-bg" src="image/contact-bg.jpg" alt="Contact Background">
+  <div class="overlay">
+    <div class="heading">
+       <h6>| Contact Us</h6>
+      <h2>Get In Touch With<br>Our Agents</h2>
+    </div>
+    <div class="contact-container">
+      <div class="left-box">
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17991.470191243194!2d-80.13411422604846!3d25.93922495850727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9adf188ad01e3%3A0x80d737cd5cf0a0b8!2sSunny%20Isles%20Beach!5e0!3m2!1sen!2sus!4v1719041294913!5m2!1sen!2sus"
+          width="100%" height="500" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    <div class="info-boxes">
+      <div class="info-item">
+        <img src="image/phone-icon.png" alt="">
+        <h6>010-020-0340<br><span>Phone Number</span></h6>
+      </div>
+      <div class="info-item">
+        <img src="image/email-icon.png" alt="">
+        <h6>info@villa.co<br><span>Business Email</span></h6>
+      </div>
+    </div>
+      </div>
+      <div class="right-box">
+        <form>
+          <div class="row-form">
+          <label>Full Name</label>
+          <input type="text" placeholder="Your Name..." required>
+          <label>Email Address</label>
+          <input type="email" placeholder="Your E-mail..." required>
+          <label>Subject</label>
+          <input type="text" placeholder="Subject...">
+          <label>Message</label>
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer">
+    <div class="footer-container">
+      <p>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. 
+      Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+  ///luot xuong an sub-header
+const subHeader = document.querySelector(".sub-header");
+const headerArea = document.querySelector(".header-area");
+window.addEventListener("scroll", function () {
+  if (window.scrollY === 0) {
+    // Ở đầu trang
+    subHeader.classList.remove("hide");
+    headerArea.classList.remove("compact");
+  } else {
+    // Đã cuộn xuống
+    subHeader.classList.add("hide");
+    headerArea.classList.add("compact");
+  }
+});
+  ///
+let currentIndex = 0;
+const slides = document.getElementById("slides");
+function showSlide(index) {
+  const totalSlides = slides.children.length;
+  if (index >= totalSlides) currentIndex = 0;
+  else if (index < 0) currentIndex = totalSlides - 1;
+  else currentIndex = index;
+  slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+function nextSlide() {
+  showSlide(currentIndex + 1);
+}
+function prevSlide() {
+  showSlide(currentIndex - 1);
+}
+  ////
+const buttons = document.querySelectorAll('.accordion-button');
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const isActive = button.classList.contains('active');
+    buttons.forEach(btn => {
+      btn.classList.remove('active');
+      btn.nextElementSibling.classList.remove('show');
+    });
+    if (!isActive) {
+      button.classList.add('active');
+      button.nextElementSibling.classList.add('show');
+    }
+  });
+});
+function toggleMenu() {
+  const dropdown = document.getElementById("dropdownMenu");
+  dropdown.classList.toggle("show");
+}
+function toggleMoreDropdown(event) {
+  event.stopPropagation();
+  const dropdown = document.getElementById("moreDropdown");
+  dropdown.classList.toggle("show");
+}
+window.addEventListener("click", function (e) {
+  const menu = document.getElementById("dropdownMenu");
+  const icon = document.querySelector(".menu-icon");
+  if (!menu.contains(e.target) && !icon.contains(e.target)) {
+    menu.classList.remove("show");
+  }
+});
+
+///
+function openTab(tabId) {
+  const tabs = document.querySelectorAll('.tab-content');
+  const buttons = document.querySelectorAll('.tab-btn');
+
+  tabs.forEach(tab => tab.classList.remove('active'));
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  document.getElementById(tabId).classList.add('active');
+  event.target.classList.add('active');
+}
+///
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+    if (preloader) {
+    preloader.classList.add("loaded");
+  } 
+});
+</script>
+</body>
+</html>

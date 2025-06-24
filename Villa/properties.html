@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>W3.CSS.Template</title>
+  <link rel="stylesheet" href="properties.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!---Looding page ----->
+<div id="preloader" class="preloader">
+  <div class="preloader-inner">
+    <span class="dot"></span>
+    <div class="dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>
+<!---Sub header ----->
+<div class="sub-header">
+    <div class="container">
+      <div class="row-1">
+        <div class="row-info">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i> info@company.com</li>
+            <li><i class="fa fa-map"></i> Sunny Isles Beach, FL 33160</li>
+          </ul>
+        </div>
+        <div class="row-social">
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</div>
+<!--- Header ----->
+<header class="header-area">
+  <div class="container">
+    <div class="row">
+      <div class="row-main">
+        <nav class="main-nav">
+          <a href="home.html" class="logo">
+            <h1>Villa</h1>
+          </a>
+          <ul class="nav">
+            <li><a href="home.html">Villa</a></li>
+            <li><a href="properties.html"  class="active">Properties</a></li>
+            <li><a href="details.html">Property Details</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+          </ul>   
+          <a class="menu-trigger">
+            <span>Menu</span>
+          </a>
+        </nav>
+      </div>
+      <div class="navbar-demo">
+        <div class="nav-title">Villa</div>
+        <div class="menu-icon" onclick="toggleMenu()"><i class='fa fa-bars'></i></div>
+        <div id="dropdownMenu" class="dropdown">
+        <a href="home.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="details.html">Property Details</a>  
+        <a href="contact.html">Contact Us</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="page-heading">
+  <div class="page-heading-slide">
+    <img src="image/page-heading-bg.jpg" alt="Slide 1">
+  </div>
+  <div class="page-heading-content">
+    <div class="breadcrumb"><a href="#">Home</a> / Properties</div>
+    <h3>Properties</h3>
+  </div>
+</div>
+<div class="section properties">
+    <div class="container">
+        <div class="filter-buttons">
+            <button class="filter-btn active">Show All</button>
+            <button class="filter-btn">Apartment</button>
+            <button class="filter-btn">Villa House</button>
+            <button class="filter-btn">Penthouse</button>
+        </div>
+
+        <div class="property-grid">
+            <div class="property-card" data-type="Villa House">
+                <img src="image/property-01.jpg" alt="Property 1">
+                <span class="category">Luxury Villa</span>
+                <h6>$2.264.000</h6>
+                <h4>18 Old Street Miami, OR 97219</h4>
+                <ul>
+                    <li>Bedrooms: <span>8</span></li>
+                    <li>Bathrooms: <span>8</span></li>
+                    <li>Area: <span>545m2</span></li>
+                    <li>Floor: <span>3</span></li>
+                    <li>Parking: <span>6 spots</span></li>
+                </ul>
+                <div class="row-button">
+                    <a href="details.html" class="main-button">Schedule a visit</a>
+                </div>
+            </div>
+            <div class="property-card" data-type="Villa House">
+                <img src="image/property-02.jpg" alt="Property 2">
+                <span class="category">Luxury Villa</span>
+                <h6>$1.180.000</h6>
+                <h4>54 New Street Florida, OR 27001</h4>
+                <ul>
+                    <li>Bedrooms: <span>6</span></li>
+                    <li>Bathrooms: <span>5</span></li>
+                    <li>Area: <span>450m2</span></li>
+                    <li>Floor: <span>3</span></li>
+                    <li>Parking: <span>8 spots</span></li>
+                </ul>
+                <div class="row-button">
+                    <a href="details.html" class="main-button">Schedule a visit</a>
+                </div>
+            </div>
+            <div class="property-card" data-type="Villa House">
+                <img src="image/property-03.jpg" alt="Property 3">
+                <span class="category">Luxury Villa</span>
+                <h6>$1.460.000</h6>
+                <h4>26 Mid Street Portland, OR 38540</h4>
+                <ul>
+                    <li>Bedrooms: <span>5</span></li>
+                    <li>Bathrooms: <span>4</span></li>
+                    <li>Area: <span>225m2</span></li>
+                    <li>Floor: <span>3</span></li>
+                    <li>Parking: <span>10 spots</span></li>
+                </ul>
+                <div class="row-button">
+                    <a href="details.html" class="main-button">Schedule a visit</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-type="Apartment">
+                <img src="image/property-04.jpg" alt="Property 4">
+                <span class="category">Apartment</span>
+                <h6>$584.500</h6>
+                <h4>12 Hope Street Portland, OR 12650</h4>
+                <ul>
+                    <li>Bedrooms: <span>4</span></li>
+                    <li>Bathrooms: <span>3</span></li>
+                    <li>Area: <span>125m2</span></li>
+                    <li>Floor: <span>25th</span></li>
+                    <li>Parking: <span>2 cars</span></li>
+                </ul>
+                <div class="row-button">
+                    <a href="details.html" class="main-button">Schedule a visit</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-type="Penthouse">
+                <img src="image/property-05.jpg" alt="Property 5">
+                <span class="category">Penthouse</span>
+                <h6>$925.600</h6>
+                <h4>34 Hope Street Portland, OR 42680</h4>
+                <ul>
+                    <li>Bedrooms: <span>4</span></li>
+                    <li>Bathrooms: <span>4</span></li>
+                    <li>Area: <span>180m2</span></li>
+                    <li>Floor: <span>38th</span></li>
+                    <li>Parking: <span>2 cars</span></li>
+                </ul>
+                <div class="row-button">
+                    <a href="details.html" class="main-button">Schedule a visit</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-type="Apartment">
+                <img src="image/property-06.jpg" alt="Property 6">
+                <span class="category">Modern Condo</span>
+                <h6>$450.000</h6>
+                <h4>22 Hope Street Portland, OR 16540</h4>
+                <ul>
+                    <li>Bedrooms: <span>3</span></li>
+                    <li>Bathrooms: <span>2</span></li>
+                    <li>Area: <span>165m2</span></li>
+                    <li>Floor: <span>26th</span></li>
+                    <li>Parking: <span>3 cars</span></li>
+                </ul>
+                <div class="row-button">
+                    <a href="details.html" class="main-button">Schedule a visit</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-type="Villa House">
+                <img src="image/property-03.jpg" alt="Property 7">
+                <span class="category">Luxury Villa</span>
+                <h6>$980.000</h6>
+                <h4>14 Mid Street Miami, OR 36450</h4>
+                <ul>
+                    <li>Bedrooms: <span>8</span></li>
+                    <li>Bathrooms: <span>8</span></li>
+                    <li>Area: <span>550m2</span></li>
+                    <li>Floor: <span>3</span></li>
+                    <li>Parking: <span>12 spots</span></li>
+                </ul>
+                <div class="row-button">
+                    <a href="details.html" class="main-button">Schedule a visit</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-type="Villa House">
+                <img src="image/property-02.jpg" alt="Property 8">
+                <span class="category">Luxury Villa</span>
+                <h6>$1.520.000</h6>
+                <h4>26 Old Street Miami, OR 12870</h4>
+                <ul>
+                    <li>Bedrooms: <span>12</span></li>
+                    <li>Bathrooms: <span>15</span></li>
+                    <li>Area: <span>380m2</span></li>
+                    <li>Floor: <span>3</span></li>
+                    <li>Parking: <span>14 spots</span></li>
+                </ul>
+                <div class="row-button">
+                    <a href="details.html" class="main-button">Schedule a visit</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-type="Villa House">
+                <img src="image/property-01.jpg" alt="Property 9">
+                <span class="category">Luxury Villa</span>
+                <h6>$3.145.000</h6>
+                <h4>34 New Street Miami, OR 24650</h4>
+                <ul>
+                    <li>Bedrooms: <span>10</span></li>
+                    <li>Bathrooms: <span>12</span></li>
+                    <li>Area: <span>860m2</span></li>
+                    <li>Floor: <span>3</span></li>
+                    <li>Parking: <span>10 spots</span></li>
+                </ul>
+                <div class="row-button">
+                    <a href="details.html" class="main-button">Schedule a visit</a>
+                </div>
+            </div>
+        </div>
+        <div class="pagination-row">
+            <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li><a class="is-active" href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&gt;&gt;</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer>
+  <div class="footer">
+    <div class="footer-container">
+      <p>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. 
+      Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+  ///luot xuong an sub-header
+const subHeader = document.querySelector(".sub-header");
+const headerArea = document.querySelector(".header-area");
+window.addEventListener("scroll", function () {
+  if (window.scrollY === 0) {
+    // Ở đầu trang
+    subHeader.classList.remove("hide");
+    headerArea.classList.remove("compact");
+  } else {
+    // Đã cuộn xuống
+    subHeader.classList.add("hide");
+    headerArea.classList.add("compact");
+  }
+});
+  ////
+function toggleMenu() {
+  const dropdown = document.getElementById("dropdownMenu");
+  dropdown.classList.toggle("show");
+}
+function toggleMoreDropdown(event) {
+  event.stopPropagation();
+  const dropdown = document.getElementById("moreDropdown");
+  dropdown.classList.toggle("show");
+}
+const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".property-card");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Cập nhật nút active
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filter = btn.textContent.trim();
+
+      cards.forEach(card => {
+        const type = card.getAttribute("data-type");
+
+        if (filter === "Show All" || filter === type) {
+          card.classList.remove("hide");
+        } else {
+          card.classList.add("hide");
+        }
+      });
+    });
+});
+///
+ document.querySelectorAll('.pagination a').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault(); 
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  });
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+    if (preloader) {
+    preloader.classList.add("loaded");
+  } 
+});
+</script>
+</body>
+</html>
